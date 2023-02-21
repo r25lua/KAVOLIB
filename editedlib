@@ -16,7 +16,7 @@ function Kavo:DraggingEnabled(frame, parent)
     local dragInput, mousePos, framePos
 
     frame.InputBegan:Connect(function(input)
-        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.TouchStarted then
             dragging = true
             mousePos = input.Position
             framePos = parent.Position
@@ -121,8 +121,8 @@ local themeStyles = {
     },
     Neon = {
         SchemeColor = Color3.fromRGB(1),
-        Background = Color3.fromRGB(0.5),
-        Header = Color3.fromRGB(255, 49, 49),
+        Background = Color3.fromRGB(75,151,108),
+        Header = Color3.fromRGB(68, 68, 90),
         TextColor = Color3.fromRGB(1),
         ElementColor = Color3.fromRGB(1)
     }
