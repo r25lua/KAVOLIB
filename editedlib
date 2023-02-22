@@ -220,8 +220,8 @@ function Kavo.CreateLib(kavName, themeList)
 
     local blurFrame = Instance.new("Frame")
     
-    if (game:GetService(CoreGui):FindFirstChild(ScreenGui)) then
-    	game:GetService(CoreGui):FindFirstChild(ScreenGui):Destroy()
+    if (game:GetService(CoreGui):FindFirstChild(LibName)) then
+    	game:GetService(CoreGui):FindFirstChild(LibName):Destroy()
     end
 
     Kavo:DraggingEnabled(MainHeader, Main)
