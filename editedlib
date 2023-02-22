@@ -528,7 +528,6 @@ function Kavo.CreateLib(kavName, themeList)
             end
             sectionHead.Name = "sectionHead"
             sectionHead.Parent = sectionFrame
-	    sectionHead.BackgroundTransparency = 1.000
             sectionHead.BackgroundColor3 = themeList.SchemeColor
             Objects[sectionHead] = "BackgroundColor3"
             sectionHead.Size = UDim2.new(0, 352, 0, 33)
