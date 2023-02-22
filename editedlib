@@ -124,7 +124,7 @@ local themeStyles = {
         Background = Color3.fromRGB(0),
         Header = Color3.fromRGB(0),
         TextColor = Color3.fromRGB(255,255,255),
-        ElementColor = Color3.fromRGB(255,255,255)
+        ElementColor = Color3.fromRGB(0)
     }
 }
 local oldTheme = ""
@@ -326,6 +326,7 @@ function Kavo.CreateLib(kavName, themeList)
 
     tabFrames.Name = "tabFrames"
     tabFrames.Parent = MainSide
+    tabFrames.BackgroundTransparency = 0.5
     tabFrames.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     tabFrames.BackgroundTransparency = 1.000
     tabFrames.Position = UDim2.new(0.0438990258, 0, -0.00066378375, 0)
