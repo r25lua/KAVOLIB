@@ -123,8 +123,8 @@ local themeStyles = {
         SchemeColor = Color3.fromRGB(0),
         Background = Color3.fromRGB(0),
         Header = Color3.fromRGB(0),
-        TextColor = Color3.fromRGB(1),
-        ElementColor = Color3.fromRGB(1)
+        TextColor = Color3.fromRGB(255,255,255),
+        ElementColor = Color3.fromRGB(255,255,255)
     }
 }
 local oldTheme = ""
@@ -238,6 +238,7 @@ function Kavo.CreateLib(kavName, themeList)
 
     Main.Name = "Main"
     Main.Parent = ScreenGui
+    Main.BackgroundTransparency = 0.5
     Main.BackgroundColor3 = themeList.Background
     Main.ClipsDescendants = true
     Main.Position = UDim2.new(0.336503863, 0, 0.275485456, 0)
@@ -290,11 +291,11 @@ function Kavo.CreateLib(kavName, themeList)
     close.ImageRectOffset = Vector2.new(284, 4)
     close.ImageRectSize = Vector2.new(25, 25)
     close.MouseButton1Click:Connect(function()
-        game.TweenService:Create(close, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut), {
+        game.TweenService:Create(close, TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut), {
             ImageTransparency = 1
         }):Play()
         wait()
-        game.TweenService:Create(Main, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+        game.TweenService:Create(Main, TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
 			Size = UDim2.new(0,0,0,0),
 			Position = UDim2.new(0, Main.AbsolutePosition.X + (Main.AbsoluteSize.X / 2), 0, Main.AbsolutePosition.Y + (Main.AbsoluteSize.Y / 2))
 		}):Play()
