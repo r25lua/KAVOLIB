@@ -238,7 +238,7 @@ function Kavo.CreateLib(kavName, themeList)
 
     Main.Name = "Main"
     Main.Parent = ScreenGui
-    Main.BackgroundTransparency = 0.5
+    Main.BackgroundTransparency = 1
     Main.BackgroundColor3 = themeList.Background
     Main.ClipsDescendants = true
     Main.Position = UDim2.new(0.336503863, 0, 0.275485456, 0)
@@ -251,7 +251,7 @@ function Kavo.CreateLib(kavName, themeList)
     MainHeader.Name = "MainHeader"
     MainHeader.Parent = Main
     MainHeader.BackgroundColor3 = themeList.Header
-    MainHeader.BackgroundTransparency = 0.5
+    MainHeader.BackgroundTransparency = 0
     Objects[MainHeader] = "BackgroundColor3"
     MainHeader.Size = UDim2.new(0, 525, 0, 29)
     headerCover.CornerRadius = UDim.new(0, 4)
@@ -260,7 +260,7 @@ function Kavo.CreateLib(kavName, themeList)
 
     coverup.Name = "coverup"
     coverup.Parent = MainHeader
-    coverup.BackgroundTransparency = 0.5
+    coverup.BackgroundTransparency = 1
     coverup.BackgroundColor3 = themeList.Header
     Objects[coverup] = "BackgroundColor3"
     coverup.BorderSizePixel = 0
@@ -305,7 +305,7 @@ function Kavo.CreateLib(kavName, themeList)
 
     MainSide.Name = "MainSide"
     MainSide.Parent = Main
-    MainSide.BackgroundTransparency = 0.5
+    MainSide.BackgroundTransparency = 1
     MainSide.BackgroundColor3 = themeList.Header
     Objects[MainSide] = "Header"
     MainSide.Position = UDim2.new(-7.4505806e-09, 0, 0.0911949649, 0)
@@ -317,7 +317,7 @@ function Kavo.CreateLib(kavName, themeList)
 
     coverup_2.Name = "coverup"
     coverup_2.Parent = MainSide
-    coverup_2.BackgroundTransparency = 0.5
+    coverup_2.BackgroundTransparency = 1
     coverup_2.BackgroundColor3 = themeList.Header
     Objects[coverup_2] = "Header"
     coverup_2.BorderSizePixel = 0
@@ -326,7 +326,7 @@ function Kavo.CreateLib(kavName, themeList)
 
     tabFrames.Name = "tabFrames"
     tabFrames.Parent = MainSide
-    tabFrames.BackgroundTransparency = 0.5
+    tabFrames.BackgroundTransparency = 1
     tabFrames.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     tabFrames.BackgroundTransparency = 1.000
     tabFrames.Position = UDim2.new(0.0438990258, 0, -0.00066378375, 0)
@@ -528,6 +528,7 @@ function Kavo.CreateLib(kavName, themeList)
             end
             sectionHead.Name = "sectionHead"
             sectionHead.Parent = sectionFrame
+	    sectionHead.BackgroundTransparency = 1.000
             sectionHead.BackgroundColor3 = themeList.SchemeColor
             Objects[sectionHead] = "BackgroundColor3"
             sectionHead.Size = UDim2.new(0, 352, 0, 33)
